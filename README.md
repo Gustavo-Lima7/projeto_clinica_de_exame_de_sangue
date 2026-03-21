@@ -1,4 +1,3 @@
-# projeto_clinica_de_exame_de_sangue
 print("Olá, seja vem vindo(a) à clínica!\nPor favor preencha com seus dados para continuarmos!")
 nome = input("Seu nome: ")
 while True:
