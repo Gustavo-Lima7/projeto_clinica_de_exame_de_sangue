@@ -1,3 +1,11 @@
+import random
+exames = {
+    "1": {"nome": "Hemograma"},
+    "2": {"nome": "Glicemia"},
+    "3": {"nome": "Colesterol"},
+    "4": {"nome": "Triglicerídeos"},
+    "5": {"nome": "Urina"}
+}
 print("Olá, seja vem vindo(a) à clínica!\nPor favor preencha com seus dados para continuarmos!")
 nome = input("Seu nome: ")
 while True:
@@ -13,4 +21,13 @@ while True:
     else:
         print("Digite somente números por favor")
 print("Obrigado! Seu cadastro já está feito!")
-exm = input("Agora selecione o exame que deseja realizar!\n1 - Hemograma\n2 - Glicemia\n3 - Colesterol\n4 - Triglicerídeos\n5 - Urina\nDigite aqui o número ou o nome do exame: ")
+senha = random.randint(100, 999)
+escolha_exame = input("Agora selecione o exame que deseja realizar!\n1 - Hemograma\n2 - Glicemia\n3 - Colesterol\n4 - Triglicerídeos\n5 - Urina\nDigite aqui o número do exame: ")
+while True:
+   exame_selecionado = exames.get(escolha_exame)
+   if escolha_exame in exames:
+    print(f"{nome} você selecionou o exame: {exame_selecionado['nome']}. Sua senha é {senha}. Obrigado por escolher nossa clínica!")
+    break
+   else: 
+       print("Opção inválida, por favor digite o número do exame selecionado: ")
+       escolha_exame = input("1 - Hemograma\n2 - Glicemia\n3 - Colesterol\n4 - Triglicerídeos\n5 - Urina\nDigite aqui o número do exame: ")
