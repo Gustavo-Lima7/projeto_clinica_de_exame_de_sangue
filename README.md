@@ -18,10 +18,9 @@ Este projeto é um sistema simples desenvolvido em Python para simular o funcion
 - Entrada e saída de dados via terminal
 
 ## Como executar o projeto
-
+```bash
 1. Clone o repositório:
 
-```bash
 git clone https://github.com/Gustavo-Lima7/projeto_clinica_de_exame_de_sangue.git
 
 2. Acesse a pasta do projeto:
